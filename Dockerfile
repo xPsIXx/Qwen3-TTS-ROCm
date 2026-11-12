@@ -25,9 +25,10 @@ RUN pip install --no-cache-dir \
       "uvicorn[standard]" \
  && pip install --no-cache-dir --no-deps .
 
+# QWEN_TTS_MODEL is intentionally NOT set here — the container refuses to start
+# without it so the model choice is always explicit (see DOCKER.md for the menu).
 ENV HF_HOME=/models \
     MIOPEN_USER_DB_PATH=/models/miopen \
-    QWEN_TTS_MODEL=Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice \
     QWEN_TTS_ATTN=sdpa \
     QWEN_TTS_PORT=3447
 
