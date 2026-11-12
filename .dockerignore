@@ -1,0 +1,10 @@
+.git
+.gitignore
+.github/workflows/*.md
+__pycache__/
+*.pyc
+models/
+*.wav
+*.mp3
+hermes/
+.qa/

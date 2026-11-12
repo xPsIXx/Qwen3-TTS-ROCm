@@ -143,6 +143,9 @@ Also, you should have hardware that is compatible with FlashAttention 2. Read mo
 
 ### AMD ROCm Installation (RX 7000 / MI Series)
 
+> **Docker?** A ready-made ROCm image is built by GitHub Actions in this repo — see [DOCKER.md](DOCKER.md).
+
+
 This fork adds support for **AMD GPUs** via ROCm 7.2. ROCm's HIP runtime maps to PyTorch's `cuda` backend, so `device_map="cuda:0"` works for both NVIDIA and AMD GPUs — no code changes needed for inference.
 
 > **Prerequisites:** ROCm 7.2.x drivers installed on the host system. See the [ROCm installation guide](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/).
