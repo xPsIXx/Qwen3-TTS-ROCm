@@ -22,6 +22,7 @@ RUN pip install --no-cache-dir \
       einops \
       onnxruntime \
       fastapi \
+      python-multipart \
       "uvicorn[standard]" \
  && pip install --no-cache-dir --no-deps .
 
